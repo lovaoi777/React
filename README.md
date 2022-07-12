@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+#JSX 실습 목표 정리
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Dark Mode
+Dark Mode와 Light Mode 조건부 렌더링 UI를 구현한다.
 
-## Available Scripts
+Loading
+Loading Ture : 로딩중일 경우 로딩 이미지를 표시한다.
+Loading False : 게시글을 표시한다.
+Loading False && No Post : 로딩이 끝났지만 표시 할 포스트가 없을 경우 없다는 문구를 띄워준다.
 
-In the project directory, you can run:
+file list
 
-### `yarn start`
+1. loading.svg : 로딩중일떄 사용되는 파일
+2. index.css에 맨위에 import url은 구글폰트를 크롤링해온것이다. 설치하지않고 가져올수있다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+SlogunSection :
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. SlogunBIg 태그를 이용하여 메인안에 글짜를 대표 글짜를 지정해준다.
+2. SlogunSmall : 위와같이 작은 글씨로 상단에 배치가 된다.
 
-### `yarn test`
+PostSection : 게시물의 확일할 구역
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+FontAwesomeIcon : FontAwesomeIcon 라이브러리 를 설치한 아이콘을 가지고올수있다.
+아래와 같이 사용하면 된다.
+<FontAwesomeIcon icon={faArrowsRotate} />
 
-### `yarn build`
+PostRepl : 댓글의 개수
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+PagenumberDiv : 현재 페이지의 수
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+GlobalStyles : 브라우저의 기본디자인을 여백을 무시하는 기능
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ThemeProvider : 속성값으로 스타일을 받을수있다.
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
